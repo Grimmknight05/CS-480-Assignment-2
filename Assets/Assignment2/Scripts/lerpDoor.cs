@@ -110,7 +110,7 @@ namespace StealthGame
                         break;
                     //AXIS_ROTATION//
                     case DoorMode.AxisRotation:
-                        float targetAngle = Mathf.Lerp(0f, rotationAmount, tEased); //Find the lerped angle acording to tEased
+                        float targetAngle = Mathf.Lerp(0.0f, rotationAmount, tEased); //Find the lerped angle acording to tEased
                         float delta = targetAngle - currentAngle; //Calculate distance between angles
                         transform.RotateAround(pivot.position, rotationAxis, delta);//Actual Rotation
                         currentAngle = targetAngle;//set new angle as current
