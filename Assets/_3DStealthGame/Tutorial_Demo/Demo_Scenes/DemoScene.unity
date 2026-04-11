@@ -2895,6 +2895,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedDoorRevamped
       objectReference: {fileID: 0}
+    - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
+      propertyPath: mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
+      propertyPath: rotationAmount
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801834030329155880, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e68b75fe23bc05b4992b2f34856c8a0a, type: 2}
     - target: {fileID: 5190360309993858580, guid: 05afbd1530ff2374c98ec6f4c04366c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4116,19 +4136,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
         type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
       propertyPath: KeyName
       value: keyBlue
       objectReference: {fileID: 0}
     - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
         type: 3}
       propertyPath: offset.x
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2593456019986397199, guid: 05afbd1530ff2374c98ec6f4c04366c7,
         type: 3}
       propertyPath: offset.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4801834030329155880, guid: 05afbd1530ff2374c98ec6f4c04366c7,
+        type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 849c7bbffe7fe4351986642f39a4bbc2, type: 2}
     - target: {fileID: 5190360309993858580, guid: 05afbd1530ff2374c98ec6f4c04366c7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5193,6 +5223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075534488604402034, guid: abeb186619cc7e6419cb81e1e4dfa162,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6779125022148242486, guid: abeb186619cc7e6419cb81e1e4dfa162,
         type: 3}

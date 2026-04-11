@@ -4,6 +4,7 @@ using UnityEngine;
 namespace StealthGame
 {
     /*
+     by Joshua Henrikson
     //- CUSTOM LERP DOOR -//
     There are three modes this door can function in this is defined by an Enum DoorMode and selected in the inpector for each door.
     I adapted the origonal door code which simply deleted the door on colision. I changed this interaction to a trigger and added a 
@@ -23,10 +24,12 @@ namespace StealthGame
      */
     public class lerpDoor : MonoBehaviour
     {
+        //Base function
         [SerializeField] private string KeyName = "key1";
+
+        //Lerp
         [SerializeField] private float speed = 5f;
         private float t = 0f;
-        private bool opening = false;
         //SLIDE
         private Vector3 startPos;
         private Vector3 targetPos;
@@ -48,15 +51,14 @@ namespace StealthGame
             Rotate,
             AxisRotation
         }
-        [SerializeField] DoorMode mode;
+        [SerializeField] DoorMode mode;// DoorMode INIT
         public enum DoorState //Door State
         {
             Closed,
             Opening,
             Open
         }
-
-        public DoorState state = DoorState.Closed;
+        public DoorState state = DoorState.Closed;// DoorState INIT
 
         private void OnTriggerEnter(Collider other)
         {
@@ -78,10 +80,10 @@ namespace StealthGame
         }
         private void Start()
         {
-            //Slide
+            //SLIDE//
             startPos = doorMesh.position;
             targetPos = startPos + offset;
-            //Rotation
+            //ROTATE//
             startRot = doorMesh.rotation;//Get current Rotation
             targetRot = Quaternion.Euler(0, 90, 0) * startRot;
         }
@@ -98,15 +100,15 @@ namespace StealthGame
                 //Modes
                 switch (mode)//Mode switch
                 {
-                    //SLIDE
+                    //SLIDE//
                     case DoorMode.Slide:
                         doorMesh.position = Vector3.Lerp(startPos, targetPos, tEased);
                         break;
-                    //ROTATE
+                    //ROTATE//
                     case DoorMode.Rotate:
                         doorMesh.rotation = Quaternion.Lerp(startRot, targetRot, tEased);
                         break;
-                    //AXIS_ROTATION
+                    //AXIS_ROTATION//
                     case DoorMode.AxisRotation:
                         float targetAngle = Mathf.Lerp(0f, rotationAmount, tEased); //Find the lerped angle acording to tEased
                         float delta = targetAngle - currentAngle; //Calculate distance between angles
