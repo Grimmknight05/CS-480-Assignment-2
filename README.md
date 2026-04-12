@@ -32,3 +32,12 @@ The axis rotation mode uses an definable gameObject that acts as a pivot for the
 
 ---
 
+## Key Compass
+**By David Haddad**
+
+The key compass is a world-space hint that points toward the next key the player still needs. It is implemented by `StealthGame.NextKeyCompass` on the player (`Assets/Assignment2/Scripts/NextKeyCompass.cs`). In the demo player prefab, a `CompassPivot` child rotates on Y only toward the target key; the `CompassNeedle` is assigned in the Inspector (optional `compassParticles` can fire when the target key changes). The script picks the next unowned key in order `keyRed` then `keyBlue` using `PlayerMovement.OwnKey` and `Key` objects in the scene, computes horizontal direction and signed yaw with `Atan2` from the cross and dot of forward vs. to-key, and hides the pivot when there is no target or the player is within `minHorizontalDistance`. With `useDotProductForVisibility`, the needle scales down when the key is more behind the player.
+
+**HQP Studios** (HQP) is the publisher of the third-party Unity asset pack **Low Poly 3D Icons - Pack Lite** under `Assets/HQP Studios/`. The compass needle visual is not custom-modeled geometry: it is a prefab instance from that pack (e.g. `Arrow_3D_Icon_01`) with materials from the same pack. Redistribution follows the pack's license documents in `Assets/HQP Studios/Low Poly 3D Icons - Pack Lite/Document/`.
+
+---
+
