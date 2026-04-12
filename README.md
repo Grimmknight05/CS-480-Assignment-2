@@ -32,3 +32,15 @@ The axis rotation mode uses an definable gameObject that acts as a pivot for the
 
 ---
 
+## Key pickup particle and sound (trigger)
+
+**By David Haddad**
+
+This satisfies the assignment items for a **new particle effect with trigger(s)** and a **new sound effect with trigger(s)**. Pickup is still driven by the key’s **trigger collider** (`OnTriggerEnter` on the player).
+
+Implementation lives in [`Assets/_3DStealthGame/Tutorial_Demo/Demo_Scripts/Bonus Features/Key.cs`](Assets/_3DStealthGame/Tutorial_Demo/Demo_Scripts/Bonus%20Features/Key.cs). The `Key` component exposes optional **`pickupParticles`** (`ParticleSystem`) and **`pickupClip`** (`AudioClip`). When the player enters the trigger, the script adds the key to inventory, plays **`AudioSource.PlayClipAtPoint`** at the key’s position if a clip is assigned, then—if a particle system is assigned—**unparents** it (so it is not destroyed with the key), **`Play()`**s it, and **`Destroy`**s the particle GameObject after `duration + start lifetime` (plus a short buffer) so the burst can finish without relying on the Particle System **Stop Action**.
+
+**Authoring:** In **DemoScene**, **`Key_Red`** uses a child **Particle System** (e.g. a short red-tinted burst with **Looping** off and **Play On Awake** off). Assign that system to **`Pickup Particles`** and assign a pickup sound from [`Assets/Assignment2/Audios/`](Assets/Assignment2/Audios/) (short **`.ogg`** jingles) to **`Pickup Clip`**. The same clip can be assigned on **`Key_Blue`** if every key pickup should make sound. **Save the scene** so those overrides stay in version control.
+
+---
+
