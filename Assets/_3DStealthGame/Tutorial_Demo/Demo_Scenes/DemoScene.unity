@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1c17d1473df9595419b9463f0b7cdec9, type: 2}
+--- !u!198 &6 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198175801688348628, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897915772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &50719414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3803,18 +3809,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643423111}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1679738803 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4441266138185142, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1897915772}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1679738805 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198175801688348628, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1897915772}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1711401385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4518,6 +4512,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 563ac48ff656d49478fd93213f4c0eb8, type: 3}
+--- !u!4 &1997158758 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4441266138185142, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897915772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2054829859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,7 +4720,7 @@ Transform:
   m_LocalScale: {x: 0.10000001, y: 0.10000001, z: 0.10000002}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1679738803}
+  - {fileID: 1997158758}
   m_Father: {fileID: 841910684}
   m_LocalEulerAnglesHint: {x: -79.236, y: -134.871, z: 0}
 --- !u!114 &2055026484
@@ -4740,7 +4740,7 @@ MonoBehaviour:
   deadMaterial: {fileID: 2100000, guid: a5a6184ff807ecc4ca26522cd6876800, type: 2}
   KeyName: keyRed
   state: 0
-  explosionParticleSystem: {fileID: 1679738805}
+  explosionParticleSystem: {fileID: 6}
   rend: {fileID: 1463636137}
 --- !u!135 &2055026485
 SphereCollider:
