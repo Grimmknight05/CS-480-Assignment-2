@@ -2,6 +2,18 @@
 
 
 ---
+## Carrot Collectible (Pickup Burst + Bite Sound + Speed Boost)
+**By Katie Trinh**
+
+This is a simple collectible pickup feature:
+- Carrots use the included food prefab visual (`Assets/HQP Studios/Low Poly 3D Icons - Pack Lite/Prefabs/Carrot_3D_Icon.prefab`).
+- While uncollected, each carrot hover/bob up and down (`hoverHeight`, `hoverSpeed`).
+- When the player enters the carrot trigger, the carrot is collected.
+- On collect, a **pickup burst particle effect** is triggered, a bite sound effect plays, and the carrot object is destroyed.
+- The carrot gives a temporary movement speed boost to the player (`giveSpeedBoost`, `speedBoostAmount`, `speedBoostDuration`).
+
+This satisfies the assignment items for a **new particle effect with trigger(s)** and a **new sound effect with trigger(s)**. Pickup is driven by the carrot object's trigger collider using `OnTriggerEnter` with the player. Three have been scattered around the map.
+---
 
 ## Custom Lerp Door
 **By Joshua Henrikson**
