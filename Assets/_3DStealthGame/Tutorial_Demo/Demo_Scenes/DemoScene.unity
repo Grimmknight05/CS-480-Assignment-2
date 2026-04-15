@@ -24594,7 +24594,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 989148eab37804aceaf88f0dcc30d70a, type: 3}
+  - {fileID: 2100000, guid: 3b57a12139b8a4d0490e0236f04df5f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24625,7 +24625,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055026480}
-  m_Mesh: {fileID: 3038391321006430457, guid: 989148eab37804aceaf88f0dcc30d70a, type: 3}
+  m_Mesh: {fileID: 4300000, guid: bbc7f896f77a14885b5a70a3e9774842, type: 2}
 --- !u!4 &2055026483
 Transform:
   m_ObjectHideFlags: 0
@@ -24654,8 +24654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9058977809e3b4ef9abba9582f504dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  originalMaterial: {fileID: -876546973899608171, guid: 989148eab37804aceaf88f0dcc30d70a,
-    type: 3}
+  originalMaterial: {fileID: 2100000, guid: 3b57a12139b8a4d0490e0236f04df5f5, type: 2}
   deadMaterial: {fileID: 2100000, guid: a5a6184ff807ecc4ca26522cd6876800, type: 2}
   KeyName: keyRed
   state: 0
