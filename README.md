@@ -62,3 +62,13 @@ The key compass is a world-space hint that points toward the next key the player
 
 ---
 
+
+## The Little Guy and His Unfortunate Fate
+
+**By Sarah Temple**
+
+This interaction is set up in the first scene next to the arm chair, where the small gray circle character (with little arms and legs) reacts to the red key objective. If the player picks up `keyRed` and brings it to the little guy, a trigger fires and he explodes using a Unity Particle System effect. He also turns black due to his material changing. 
+
+This adds another event-driven visual effect to the scene flow: the key pickup and delivery condition drives the trigger, then the particle burst plays to sell the "unfortunate fate" moment.
+
+Explosion effect examples used for setup/reference are in `Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects`. The Little Guy mesh was made in Blender and is stored at `Assets/Assignment2/Meshs/LittleGuy.blend`. The trigger/behavior logic for this interaction is implemented in `Assets/Assignment2/Scripts/LittleGuyGoesBomb.cs`.
